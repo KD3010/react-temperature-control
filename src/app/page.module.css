@@ -1,0 +1,73 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  background: #FC5C7D;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  .screen {
+    height: 350px;
+    min-width: 230px;
+    width: 20%;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px rgb(108, 108, 108);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.display {
+  margin-top: 1rem;
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  background-color: rgb(193, 188, 240);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.5s;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  margin-top: 1rem;
+  gap: 2rem;
+}
+
+.button {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 2px solid grey;
+  font-size: xx-large;
+  color: grey;  
+  box-shadow: 0px 3px 20px rgb(202, 202, 202);
+  transition: all 0.5s;
+}
+
+.button:hover {
+  transform: translateY(-2px) scale(1.05);
+}
+
+.cold {
+  background-color: rgb(109, 109, 255);
+}
+
+.hot {
+  background-color: rgb(220, 172, 27);
+}
+
+.freezing {
+  background-color: rgb(127, 220, 202);
+}
